@@ -1,0 +1,34 @@
+PROGRAM Bai1;
+CONST MAX = 50;
+TYPE ROW = ARRAY(. 50 .) OF INTEGER;
+     MATRIX = ARRAY(. 50 .) OF ROW;
+
+VAR N : INTEGER;
+    A : MATRIX;
+    I : INTEGER;
+    J : INTEGER;
+    RESULT : INTEGER;
+
+BEGIN
+  CALL ReadI(N);
+
+  FOR I := 1 TO N DO
+    FOR J := 1 TO N DO
+      CALL ReadI(A(.I.)(.J.));
+
+  RESULT := 1;
+
+  FOR I := 1 TO N DO
+    BEGIN
+      FOR J := 1 TO N DO
+        BEGIN
+          IF I > J THEN
+            BEGIN
+              IF A(.I.)(.J.) != 0 THEN
+                RESULT := 0;
+            END;
+        END;
+    END;
+
+  CALL WriteI(RESULT);
+END.

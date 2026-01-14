@@ -1,0 +1,11 @@
+PROGRAM Sum2Num;
+VAR A : INTEGER;
+    B : INTEGER;
+    S : INTEGER;
+
+BEGIN
+  CALL ReadI(A);
+  CALL ReadI(B);
+  S := A + B;
+  CALL WriteI(S);
+END.
