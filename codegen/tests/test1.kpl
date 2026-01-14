@@ -1,0 +1,7 @@
+PROGRAM EX1; 
+VAR S: INTEGER;  
+    I: INTEGER;
+BEGIN S:=0;
+    FOR I:=1 TO 5 
+    DO S:=S+I; 
+END.

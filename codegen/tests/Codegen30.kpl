@@ -1,0 +1,10 @@
+Program Codegen5; 
+Var n : Integer;b:integer;
+Begin
+  n := 5;
+  If (n - (n/2) * 2) = 0
+  Then 
+    b:=0
+  Else
+    b:=1;
+END. 
