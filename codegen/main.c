@@ -48,6 +48,8 @@ int main(int argc, char *argv[]) {
     return -1;
   }
 
+  printf("20225750 Vu Hai Nam\nCodegenk.KPL\n");
+
   for ( i = 3; i < argc; i ++) 
     analyseParam(argv[i]);
 
